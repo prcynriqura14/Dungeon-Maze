@@ -1,197 +1,62 @@
 Repositorio del proyecto Dungeon-Maze para el proyecto final de Desarrollo de Software IV
-*{  
-}
 
-body{
- background-image:url(Fondo.jpg);	
-	text-align:center;	
-}
+<html>
 
-#container{
-	border: 4px solid white;
-	background-color:black;	
-	width:1024px;
-	height:768px;
-	top: 100px;
-	right: 200px;	
-}
-
-#menu-externo{
-	border: 2px solid white;
-	width: 100%;
-	height:20%;
-	float:left;
-	background-color:#009;
-	/*background-image:url(../Imagenes/ImagenSuperior.JPG);		
-	background-repeat:no-repeat;*/
-}
-
-#menu{
-	position:relative;
-	height:25px;
-	width:400px;
-	float:center;
-	top:40px;
-	padding:10px 10px 10px;
-	top:20%;
-	font-weight:bold;
-	font-family:Helvetica, Geneva, Arial,
-           SunSans-Regular, sans-serif;
-	color:#FFFF00;
+<head>
+<link href="index.css"		 type='text/css' rel='stylesheet'>
+ <meta name="keywords" content="DUNGEON MAZE, dungeon maze, juego ,guerrero , valkiria , clerigo , cpw , laboratorio3, orco , globin , moustros " />
 	
-}
-
+	<meta name="description" content="DUNGEON MAZE : juego online que s ebase en elegir un pj pelear versus moustros  y ganar llaves para apsar de nivel" />		<!-- breve descripcion que se vera en google -->
+	
+	<meta name "author" contents="Joel Arellano Puente" />	
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />		<!-- Tipo de teclado -->
+	<meta name="category" content="Video Games" />				<!-- pagina de un determinado tipo -->
+	<meta name="rating" content="General" />					<!-- para que tipo de publico esta dirigido -->
+	<meta name="language" content="Español" />					<!-- idioma de la pagina -->
+	<meta name="robots" content="all, follow, index" />	  			<!-- sugerencia en como los robots de busqueda miran mi pagina-->
+	<meta name="copyright" content="Joel Arellano Puente" />		  	<!-- quien tiene los derechos de autor -->
+	<meta name="generator" content="NotePad++ , DreamWeaver" />		  	<!-- con que herramientas se hizo esta pagina -->
+</head>	
+<body>
+  
+  
  
-#menu-interno{
-left:120px;
-border: 1px solid black;
-position :relative;
-width:754px;
-height:500px;
-font-size:90%;
-background-color:grey;
-float:left;
-}
+  
+ <div id="container">  
+   <div id="menu-externo">
  
- #barraA {
+		<div id="menu">
+     			<h1>VIDEO JUEGO</h1> 
+		</div>
+		 
+   </div>
+		
+		<div id = "menu-interno" >
+		   <div id="barraA"  ><h2>Guerrero</h2><p>Un guerrero es una persona habitualmente involucrada en la guerra.
+		    En muchas sociedades tribales, los guerreros generalmente
+		    forman una casta o clase entre ellos.
+			 En el feudalismo, los vasallos esencialmente formaban una clase militar o guerrera, aunque en una guerra, los campesinos
+			también pueden ser llamados para pelear. 
+			Los guerreros profesionales son aquellos a los cuales se les paga dinero para que participen en campañas militares o en la
+			defensa de fronteras nacionales. 
+			Estos pueden caer en una de las siguientes categorías: Soldados, cuando pelean en beneficio de su propio Estado; o Mercenarios, cuando
+			ofrecen sus servicios comercialmente al mejor postor, independientemente de su nacionalidad o ideología. <br>
+			ATAQUE: 10 <br>
+			DEFENSA : 14  <br>
+			DAÑO: 15  <br>
+			VIDA: 100 
+			
+			</p></div> 
+		   <div id="barraB" ><img src="g.gif" id="g"></div>
+		   <p> 
+			   <input class="botton_menu5"  name="Guerrero" type="button" value="JUGAR" onClick="javascript:window.open('Pagina2.html')" >
+		   </p>
+		    <p> 
+			   <input class="botton_menu6"  name="Guerrero" type="button" value="ESCOGER OTRO PJ" onClick="javascript:window.close('Pagina1.html')">
+		   </p>
+		   
+		</div><!--menu interno-->
+</div>   <!--container  -->
+</body>
+</html>
 
-position :relative; 
-
-float:right;
-right:2px;
-top:50px; 
-width:340px; height:400px; 
-background-color:white;} 
- 
-#barraB {
-position :relative; 
-float : left;
-left:4px; 
-top:50px; 
-width:340px; height:400px;
- background-color:white;
-}
- 
- p{
- 
- font-size:15px;
- } 
-#barra1 {
-
-position :relative; 
-
-float:right;
-right:2px;
-top:50px; 
-width:340px; height:200px; 
-background-color:white;} 
- 
-#barra2 {
-position :relative; 
-float : left;
-left:4px; 
-top:50px; 
-width:340px; height:200px;
- background-color:white;
-}
-#barra3 {
-
-position :relative; 
-
-float:right;
-right:2px;
-top:80px; 
-width:340px; height:200px; 
-background-color:white;} 
-#barra4 {
-position :relative; 
-float : left;
-left:4px; 
-top:80px; 
-width:340px; height:200px;
- background-color:white;
-}
- 
-
-
-
-
-
-.boton{
-	list-style:none;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	font-style: normal;
-	text-transform: uppercase;
-	color: #E2E2E2;
-	background-color: #000000;
-	border: none;
-	
-	display:block;
- 
- 
-	padding:3px 15px;
-	 filter:alpha(opacity=80);
-	font-weight:bold;
-	text-decoration:none;
-	
-}
- 
-
-
- .botton_menu1 {
- position:relative;
- top:20px;
-	font-size: 36px;
-}
-.botton_menu2 {
- position:relative;
- top:100px;
-	font-size: 36px;
-}
-.botton_menu5 {
- position:relative;
- float:left;
- left:100px;
- top:130px;
-	font-size: 36px;
-}
-
- .botton_menu6 {
- position:relative;
- top:120px;
- float:left;
- left:180px;
-	font-size: 36px;
-}
-
-
-#g{
-	width:340px;
-	height:400px;
-	
-	}
-	
-	#c{
-	width:340px;
-	height:400px;
-	
-	}
-
-#v{
-	width:340px;
-	height:400px;
-	
-	}
-	
-	#mg{
-	width:340px;
-	height:200px;
-	
-	}
-	
-	#mo{
-	width:340px;
-	height:200px;
-	
-	}
