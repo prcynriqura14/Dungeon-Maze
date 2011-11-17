@@ -32,25 +32,31 @@ Repositorio del proyecto Dungeon-Maze para el proyecto final de Desarrollo de So
    </div>
 		
 		<div id = "menu-interno" >
-		   <div id="barraA"  ><h2>Valkiria</h2><p>Las valquirias son dísir, deidades femeninas menores que servían a Odín bajo el mando de Freyja, en la mitología nórdica. Su propósito era elegir a los más heroicos de aquellos caídos en batalla y llevarlos al Valhalla donde se convertían en einherjar. Esto era necesario ya que Odín precisaba guerreros para que luchasen a su lado en la batalla del fin del mundo, el Ragnarök. Su residencia habitual era el Vingólf, situado al lado del Valhalla. Dicho edificio contaba con quinientas cuarenta puertas por donde entraban los héroes caídos
-		    para que las guerreras los curasen, deleitasen con su belleza y donde también "sirven hidromiel y cuidan de la vajilla y las vasijas para beber".<br>
+		   <div id="barra1"  ><h2>Goblin</h2><p>El Goblin se pasea por los bosques del sur de Chile, con un bastón retorcido llamado Pahueldún; y además lleva una pequeña y mágica hacha de piedra, con la cual se dice que es capaz de cortar cualquier árbol con tan solo tres golpes.<br> ATAQUE: 5 <br>
+			DEFENSA : 10  <br>
+			DAÑO: 10  <br>
+			VIDA: 5 
+			
+			</p></div> 
+		   <div id="barra2" ><img src="mg.gif" id="mg"></div>
+		   <div id="barra3"  ><h3>Orco</h3><p>Orco es la deformación de un término, proveniente del inglés antiguo, que se refería a numerosos monstruos de la mitología celta. La existencia de estas criaturas fue inventada para dar explicación a los hechos de sangre y asaltos
+		    acaecidos en los campos y bosques.<br>
 			 <br> ATAQUE: 10 <br>
 			DEFENSA : 12  <br>
 			DAÑO: 20  <br>
-			VIDA: 50 
+			VIDA: 10 
 			
 			</p></div> 
-		   <div id="barraB" ><img src="v.gif" id="v"></div>
+		   <div id="barra4" ><img src="mo.gif" id="mo"></div>
 		   <p> 
-			   <input class="botton_menu5"  name="Guerrero" type="button" value="JUGAR" onClick="">
+			   <input class="botton_menu5"  name="Guerrero" type="button" value="SALIR" onClick="javascript:window.close('Pagina4.html')">
 		   </p>
-		    <p> 
-			   <input class="botton_menu6"  name="Guerrero" type="button" value="ESCOGER OTRO PJ" onClick="javascript:window.close('Pagina3.html')">
-		   </p>
+		     
+			 
+		  
 		   
 		</div><!--menu interno-->
 </div>   <!--container  -->
 </body>
 </html>
-
 
