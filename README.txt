@@ -32,27 +32,21 @@ Repositorio del proyecto Dungeon-Maze para el proyecto final de Desarrollo de So
    </div>
 		
 		<div id = "menu-interno" >
-		   <div id="barraA"  ><h2>Guerrero</h2><p>Un guerrero es una persona habitualmente involucrada en la guerra.
-		    En muchas sociedades tribales, los guerreros generalmente
-		    forman una casta o clase entre ellos.
-			 En el feudalismo, los vasallos esencialmente formaban una clase militar o guerrera, aunque en una guerra, los campesinos
-			también pueden ser llamados para pelear. 
-			Los guerreros profesionales son aquellos a los cuales se les paga dinero para que participen en campañas militares o en la
-			defensa de fronteras nacionales. 
-			Estos pueden caer en una de las siguientes categorías: Soldados, cuando pelean en beneficio de su propio Estado; o Mercenarios, cuando
-			ofrecen sus servicios comercialmente al mejor postor, independientemente de su nacionalidad o ideología. <br>
-			ATAQUE: 10 <br>
-			DEFENSA : 14  <br>
-			DAÑO: 15  <br>
-			VIDA: 100 
+		   <div id="barraA"  ><h2>Clèrigo</h2><p>Clérigo proviene del griego antiguo- klerikos. En un sentido extenso, (padre) clérigo es sinónimo del término eclesiástico (no confundir con el Eclesiástico, un libro de la Biblia) y puede hacer referencia, en el cristianismo, tanto a un miembro del clero regular (monjes y frailes ordenados) como del clero secular (sacerdotes diocesanos).
+Es importante destacar el carácter genérico del término y la multiplicidad de significados que puede tener en distintas religiones. Así, se utiliza a menudo para referirse a un dirigente religioso en el Islam.
+En el derecho vigente de la Iglesia Católica, se entiende por clérigo a la persona que se incorpora al orden sacerdotal al menos en el grado de diaconado. El derecho canónico establece un estatuto del clérigo, con la idea de proteger a los sacerdotes. <br>
+			 <br> ATAQUE: 5 <br>
+			DEFENSA : 16  <br>
+			DAÑO: 5  <br>
+			VIDA: 150 
 			
 			</p></div> 
-		   <div id="barraB" ><img src="g.gif" id="g"></div>
+		   <div id="barraB" ><img src="c.gif" id="c"></div>
 		   <p> 
-			   <input class="botton_menu5"  name="Guerrero" type="button" value="JUGAR" onClick="javascript:window.open('Pagina2.html')" >
+			   <input class="botton_menu5"  name="Guerrero" type="button" value="JUGAR" onClick="">
 		   </p>
 		    <p> 
-			   <input class="botton_menu6"  name="Guerrero" type="button" value="ESCOGER OTRO PJ" onClick="javascript:window.close('Pagina1.html')">
+			   <input class="botton_menu6"  name="Guerrero" type="button" value="ESCOGER OTRO PJ" onClick="javascript:window.close('Pagina2.html')">
 		   </p>
 		   
 		</div><!--menu interno-->
