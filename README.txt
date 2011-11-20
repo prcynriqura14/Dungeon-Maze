@@ -1,136 +1,43 @@
+<html>
 
-*{
-}
-
-body{
-	background-image:url(../Imagenes/fondo.jpg);
-	background-repeat:repeat-x;	    	
-	text-align:center;	
-}
-
-#menu{
-	color:#FFF;
-	font-weight:bold;
-	font-family:"Lucida Console", Monaco, monospace;
-	margin:2px;
-	font-size:16px;
-}
-
-#container{
-	border: 4px solid #000;
-	background-image:url(../Imagenes/fondo.jpg);
-	width:1010px;
-	height:768px;
-	top: 100px;
-	right: 200px;	
-}
-
-#menu-interno{
-/*border: 1px solid black;*/
-position :relative;
-width:400px;
-height:750px;
-font-size:90%;
-background-color:#000;
-float:left;
-left:275px;
-
-}
-
-#c3{
-/*border: 1px solid red;*/
-width:450px; 
-height:190px;
-float:left;
-background-color:#000;
-
-}
-
-#c4{
-/*border: 1px solid yellow;*/
-width:450px; 
-height:250px;
-float:left;
-background-color:#000;
-}
-
-#modelo1{
-/*border: 1px solid black;*/
-width:390px; 
-height:200px;
-float:left;
-position:relative;
-left:0px;
-
-}
-
-
-#modelo2{
-/*border: 1px solid black;*/
-width:390px; /*quitar  y ir al c2-imagen pa quitar*/
-height:150px;
-float:left;
-}
-
-#modelo3{
-/*border: 1px solid black;*/
-width:390px; 
-height:200px;
-float:left;
-}
-
-#modelo4{
-/*border: 1px solid black;*/
-width:390px; 
-height:160px;
-float:left;
-}
-#modelo5{
-/*border: 1px solid black;*/
-width:390px; 
-height:148px;
-float:left;
-}
-
-#imagen1{
-border: 1px solid white;
-position:relative;
-left: 8px;
-width:150px; 
-height:100px;
-}
-
-input.button1
-{
-   width:170px;
-   left:20px;
-   cursor:pointer;
-   height:25px;    
-}	
-
-img{
-	width:150px;
-	height:100px;	
-}
-
-#gama01{
-	color:#FFF;
-	font-family:"Comic Sans MS", cursive;
-	font-size:15px;
-	font-weight:bold;
-	background-color:#000;	
-		
-}
-
-#menu-interno a:hover{
-	color:#FF0;
-	background-color:#000;
-	font-weight:bold;	
-}
-
-marquee{
-	height:40px;
-}
-
-
-
+<head>
+<link  href="../Estilos/pagina.css"	 type='text/css' rel='stylesheet'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="keywords" content="DUNGEON MAZE, dungeon maze, juego ,guerrero , valkiria , clerigo , cpw , laboratorio3, orco , globin ,moustros " />
+<meta name="description" content="DUNGEON MAZE : juego online que s ebase en elegir un pj pelear versus moustros  y ganar llaves para apsar de nivel" />		<!-- breve descripcion que se vera en google -->
+	<meta name "author" contents="Joel Arellano Puente" content="Percy Enrique Rea Tarazona" />	
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />		<!-- Tipo de teclado -->
+	<meta name="category" content="Video Games" />				<!-- pagina de un determinado tipo -->
+	<meta name="rating" content="General" />					<!-- para que tipo de publico esta dirigido -->
+	<meta name="language" content="Español" />					<!-- idioma de la pagina -->
+	<meta name="robots" content="all, follow, index" />	  			<!-- sugerencia en como los robots de busqueda miran mi pagina-->
+	<meta name="generator" content="NotePad++ , DreamWeaver" />		  	<!-- con que herramientas se hizo esta pagina -->
+</head>	
+<body>
+   
+ <div id="container">  
+   <div id="menu-externo">
+ 		<div id="menu">
+     			<marquee scrolldelay="150" behavior="alternate"> <h1>VIDEO GAME -  DUNGEON MAZE</h1> </marquee>
+		</div>
+	</div>		
+		<div id = "menu-interno" >
+		   <div id="barraA"  ><h2>Guerrero</h2><p>Un guerrero es una persona habitualmente involucrada en la guerra.En muchas sociedades tribales, los guerreros generalmente forman una casta o clase entre ellos. En el feudalismo, los vasallos esencialmente formaban una clase militar o guerrera, aunque en una guerra, los campesinos también pueden ser llamados para pelear. <br> Los guerreros profesionales son aquellos a los cuales se les paga dinero para que participen en campañas militares o en la defensa de fronteras nacionales. Estos pueden caer en una de las siguientes categorías: Soldados, cuando pelean en beneficio de su propio Estado; o Mercenarios, cuando ofrecen sus servicios comercialmente al mejor postor, independientemente de su nacionalidad o ideología. <br>
+		<strong id="propiedad">	ATAQUE: 10 <br>
+			DEFENSA : 14  <br>
+			DAÑO: 15  <br>
+			VIDA: 100 </strong>
+			
+			</p></div> 
+		   <div id="barraB" ><img src="../Imagenes/Guerrero.gif" id="g"></div>
+		   <p> 
+			   <input class="botton_menu5"  name="Guerrero" type="button" value="JUGAR" onClick="javascript:window.open('Pagina2.html')" >
+		   </p>
+		    <p> 
+			   <input class="botton_menu6"  name="Guerrero" type="button" value="ESCOGER OTRO JUGADOR" onClick="javascript:window.open('Index.html')">
+		   </p>
+		   
+		</div><!--menu interno-->
+</div>   <!--container  -->
+</body>
+</html>
