@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<link href="../Estilos/pagina.css"		 type='text/css' rel='stylesheet'>
+<link href="../Estilos/pagina.css"	 type='text/css' rel='stylesheet'>
  <meta name="keywords" content="DUNGEON MAZE, dungeon maze, juego ,guerrero , valkiria , clerigo , cpw , laboratorio3, orco , globin , moustros " />
 	
 	<meta name="description" content="DUNGEON MAZE : juego online que s ebase en elegir un pj pelear versus moustros  y ganar llaves para apsar de nivel" />		<!-- breve descripcion que se vera en google -->
@@ -21,22 +21,21 @@
    <div id="menu-externo">
  
 		<div id="menu">
-     			<marquee scrolldelay="150" behavior="alternate"> <h1>VIDEO GAME -  DUNGEON MAZE</h1> </marquee>
+     			<marquee scrolldelay="150" behavior="alternate"> <h1>VIDEO GAME -  DUNGEON MAZE</h1> </marquee> 
 		</div>
 		 
    </div>
 		
 		<div id = "menu-interno" >
-		   <div id="barraA"  ><h2>Clérigo</h2><p>Clérigo proviene del griego antiguo- klerikos. En un sentido extenso, (padre) clérigo es sinónimo del término eclesiástico (no confundir con el Eclesiástico, un libro de la Biblia) y puede hacer referencia, en el cristianismo, tanto a un miembro del clero regular (monjes y frailes ordenados) como del clero secular (sacerdotes diocesanos).
-Es importante destacar el carácter genérico del término y la multiplicidad de significados que puede tener en distintas religiones. Así, se utiliza a menudo para referirse a un dirigente religioso en el Islam.<br>
-En el derecho vigente de la Iglesia Católica, se entiende por clérigo a la persona que se incorpora al orden sacerdotal al menos en el grado de diaconado. El derecho canónico establece un estatuto del clérigo, con la idea de proteger a los sacerdotes. <br>
-			<strong id="propiedad"> <br> ATAQUE: 5 <br>
-			DEFENSA : 16  <br>
-			DAÑO: 5  <br>
-			VIDA: 150 </strong>
+		   <div id="barraA"  ><h2>Valkiria</h2><p>Las valquirias son dísir, deidades femeninas menores que servían a Odín bajo el mando de Freyja, en la mitología nórdica. Su propósito era elegir a los más heroicos de aquellos caídos en batalla y llevarlos al Valhalla donde se convertían en einherjar. Esto era necesario ya que Odín precisaba guerreros para que luchasen a su lado en la batalla del fin del mundo, el Ragnarök.<br> Su residencia habitual era el Vingólf, situado al lado del Valhalla. Dicho edificio contaba con quinientas cuarenta puertas por donde entraban los héroes caídos
+		    para que las guerreras los curasen, deleitasen con su belleza y donde también "sirven hidromiel y cuidan de la vajilla y las vasijas para beber".<br>
+			<strong id="propiedad"> <br> ATAQUE: 10 <br>
+			DEFENSA : 12  <br>
+			DAÑO: 20  <br>
+			VIDA: 50 </strong>
 			
 			</p></div> 
-		   <div id="barraB" ><img src="../Imagenes/Clerigo.gif" id="c"></div>
+		   <div id="barraB" ><img src="../Imagenes/Valkiria.gif" id="v"></div>
 		   <p> 
 			   <input class="botton_menu5"  name="Guerrero" type="button" value="JUGAR" onClick="">
 		   </p>
