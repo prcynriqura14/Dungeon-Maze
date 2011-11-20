@@ -1,67 +1,136 @@
-Repositorio del proyecto Dungeon-Maze para el proyecto final de Desarrollo de Software IV
 
-<html>
-<head>
- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <link href="../Estilos/Index.css" type='text/css' rel='stylesheet'>
- <meta name="keywords" content="DUNGEON MAZE, dungeon maze, juego ,guerrero , valkiria , clerigo , cpw , laboratorio3, orco , globin ,moustros " />
-<meta name="description" content="DUNGEON MAZE : juego online que s ebase en elegir un pj pelear versus moustros  y ganar llaves para apsar de nivel" />		<!-- breve descripcion que se vera en google -->
-	<meta name "author" contents="Joel Arellano Puente" content="Percy Enrique Rea Tarazona" />	
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />		<!-- Tipo de teclado -->
-	<meta name="category" content="Video Games" />				<!-- pagina de un determinado tipo -->
-	<meta name="rating" content="General" />					<!-- para que tipo de publico esta dirigido -->
-	<meta name="language" content="Español" />					<!-- idioma de la pagina -->
-	<meta name="robots" content="all, follow, index" />	  			<!-- sugerencia en como los robots de busqueda miran mi pagina-->
-	<meta name="copyright" content="Joel Arellano Puente" content="Percy Enrique Rea Tarazona" /> <!-- quien tiene los derechos de autor -->
-	<meta name="generator" content="NotePad++ , DreamWeaver" />		  	<!-- con que herramientas se hizo esta pagina -->
+*{
+}
 
-</head>
-<body>
- <div id="container">
- <div id="menu">
-     			<h1>VIDEO GAME - DUNGEON MAZE </h1> 
-		</div>
+body{
+	background-image:url(../Imagenes/fondo.jpg);
+	background-repeat:repeat-x;	    	
+	text-align:center;	
+}
 
-   	<div id = "menu-interno" >
-	    <a  href="#" id="gama01"><marquee scrolldelay="120" behavior="alternate">::Personajes::</marquee></a>
-			<div id="c3">
-			     <div id="modelo1">
-			      <input type="button" name="btn1" class="button1" value="Guerrero" title="" onClick="javascript:window.open('Pagina1.html')"> 
-				  	<div id = "imagen1">
-					<img src="../Imagenes/Guerrero.gif" align="bottom"   /></div>
-						<strong>Jugador 1 </strong>
-														
-				 <div id="modelo2">
-			     <input type="button" name="btn1" class="button1" value="Clerigo" title="" onClick="javascript:window.open('Pagina2.html')"> 
-						<div id = "imagen1"> 
-                        <img src="../Imagenes/Clerigo.gif" align="bottom" / ></div>
-					<strong>Jugador 2</strong>
-					 
-					</div>	
-                    </div> 
-			</div>
-			<div id="c4"> 
-                <div id="modelo3">
-			    <input  type="button" name="btn1" class="button1" value="Valkiria" title="" onClick="javascript:window.open('Pagina3.html')"> </a>
-					<div id = "imagen1">
-					<img src="../Imagenes/Valkiria.gif" align="bottom"   >
-					</div>
-					    <strong>Jugador 3</strong>
-																	
-				 <div id="modelo4">
-                  <a href="#"  id="gama01"><marquee direction="right" scrolldelay="120" behavior="alternate">::Monstruos::</marquee></a><br>
-			       <input type="button" name="btn1" class="button1" value="Goblin" title=""> 
-							<div id = "imagen1">
-							<img src="../Imagenes/MounstruoGlobin.gif"  align="bottom"   ></div>
-							<strong>Monstruo 1 </strong> 
-				</div>
-                </div>
-                <div id="modelo5">
-                <input type="button" name="btn1" class="button1" value="Orco" title="" onClick="javascript:window.open('Pagina1.html')">
-							<div id = "imagen1">
-							<img src="../Imagenes/MounstruoOrco.gif"  align="bottom"   ></div>
-							<strong>Monstruo 2 </strong> 
-				 </div>		
-	        </div>	
-</body>
-</html>
+#menu{
+	color:#FFF;
+	font-weight:bold;
+	font-family:"Lucida Console", Monaco, monospace;
+	margin:2px;
+	font-size:16px;
+}
+
+#container{
+	border: 4px solid #000;
+	background-image:url(../Imagenes/fondo.jpg);
+	width:1010px;
+	height:768px;
+	top: 100px;
+	right: 200px;	
+}
+
+#menu-interno{
+/*border: 1px solid black;*/
+position :relative;
+width:400px;
+height:750px;
+font-size:90%;
+background-color:#000;
+float:left;
+left:275px;
+
+}
+
+#c3{
+/*border: 1px solid red;*/
+width:450px; 
+height:190px;
+float:left;
+background-color:#000;
+
+}
+
+#c4{
+/*border: 1px solid yellow;*/
+width:450px; 
+height:250px;
+float:left;
+background-color:#000;
+}
+
+#modelo1{
+/*border: 1px solid black;*/
+width:390px; 
+height:200px;
+float:left;
+position:relative;
+left:0px;
+
+}
+
+
+#modelo2{
+/*border: 1px solid black;*/
+width:390px; /*quitar  y ir al c2-imagen pa quitar*/
+height:150px;
+float:left;
+}
+
+#modelo3{
+/*border: 1px solid black;*/
+width:390px; 
+height:200px;
+float:left;
+}
+
+#modelo4{
+/*border: 1px solid black;*/
+width:390px; 
+height:160px;
+float:left;
+}
+#modelo5{
+/*border: 1px solid black;*/
+width:390px; 
+height:148px;
+float:left;
+}
+
+#imagen1{
+border: 1px solid white;
+position:relative;
+left: 8px;
+width:150px; 
+height:100px;
+}
+
+input.button1
+{
+   width:170px;
+   left:20px;
+   cursor:pointer;
+   height:25px;    
+}	
+
+img{
+	width:150px;
+	height:100px;	
+}
+
+#gama01{
+	color:#FFF;
+	font-family:"Comic Sans MS", cursive;
+	font-size:15px;
+	font-weight:bold;
+	background-color:#000;	
+		
+}
+
+#menu-interno a:hover{
+	color:#FF0;
+	background-color:#000;
+	font-weight:bold;	
+}
+
+marquee{
+	height:40px;
+}
+
+
+
