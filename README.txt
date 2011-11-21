@@ -1,63 +1,238 @@
-<html>
 
-<head>
-<link href="../Estilos/pagina.css"		 type='text/css' rel='stylesheet'>
- <meta name="keywords" content="DUNGEON MAZE, dungeon maze, juego ,guerrero , valkiria , clerigo , cpw , laboratorio3, orco , globin , moustros " />
-	
-	<meta name="description" content="DUNGEON MAZE : juego online que s ebase en elegir un pj pelear versus moustros  y ganar llaves para apsar de nivel" />		<!-- breve descripcion que se vera en google -->
-	
-	<meta name "author" contents="Joel Arellano Puente" />	
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />		<!-- Tipo de teclado -->
-	<meta name="category" content="Video Games" />				<!-- pagina de un determinado tipo -->
-	<meta name="rating" content="General" />					<!-- para que tipo de publico esta dirigido -->
-	<meta name="language" content="Español" />					<!-- idioma de la pagina -->
-	<meta name="robots" content="all, follow, index" />	  			<!-- sugerencia en como los robots de busqueda miran mi pagina-->
-	<meta name="copyright" content="Joel Arellano Puente" />		  	<!-- quien tiene los derechos de autor -->
-	<meta name="generator" content="NotePad++ , DreamWeaver" />		  	<!-- con que herramientas se hizo esta pagina -->
-</head>	
-<body>
-  
-  
+*{	
+}
+
+body{
+ background-image:url(../Imagenes/fondo.jpg);	
+	text-align:center;	
+}
+
+#container{
+	border: 4px solid white;
+	background-color:black;	
+	width:1024px;
+	height:656px;
+	top: 100px;
+	right: 170px;	
+}
+
+
+
+#container01{
+/*	border: 4px solid red;*/
+	background-color:black;	
+	width:1024px;
+	height:810px;
+	top: 100px;
+	right: 170px;	
+}
+
+#menu-externo{
+	border: 2px solid white;
+	width: 100%;
+	height:50px;
+	float:left;
+	background-color:#009;
+	font-size:10px;	
+}
+
+#menu{
+	position:relative;
+/*	border:1px solid green;*/
+	height:5px;
+	width:650px;
+	float:center;
+	top:40px;
+	padding:10px 10px 10px;
+	top:20%;
+	font-weight:bold;
+	font-family:Helvetica, Geneva, Arial,
+       SunSans-Regular, sans-serif;
+	color:#FFF;
+}
  
-  
- <div id="container01">  
-   <div id="menu-externo">
+#menu-interno{
+left:120px;
+border: 1px solid black;
+position :relative;
+width:754px;
+height:420px;
+font-size:90%;
+background-image:url(../Imagenes/fondo.jpg);
+float:left;
+margin:15px;
+top:30px;
+}
+
+ #barraA {
+position :relative; 
+float:right;
+right:2px;
+top:50px; 
+width:420px;
+height:350px; 
+background-color:#000;
+color:#FFF;
+text-align:justify;
+margin:5px;
+border:2px solid black;
+
+} 
  
-		<div id="menu">
-     			<marquee scrolldelay="150" behavior="alternate"> <h1>VIDEO GAME -  DUNGEON MAZE</h1> </marquee>
-		</div>
-		 
-   </div>
-		
-		<div id = "menu-interno01" >
-		   <div id="barra1"><h2>Goblin</h2><p>El Goblin se pasea por los bosques del sur de Chile, con un bastón retorcido llamado Pahueldún; y además lleva una pequeña y mágica hacha de piedra, con la cual se dice que es capaz de cortar cualquier árbol con tan solo tres golpes.<br> 
-           <strong id="propiedad"> ATAQUE: 5 <br>
-			DEFENSA : 10  <br>
-			DAÑO: 10  <br>
-			VIDA: 5 </strong>
-			
-			</p></div> 
-		   <div id="barra2" ><img src="../Imagenes/MounstruoGlobin.gif" id="mg"></div>
-           
-		   <div id="barra3"  ><h3>Orco</h3><p>Orco es la deformación de un término, proveniente del inglés antiguo, que se refería a numerosos monstruos de la mitología celta. La existencia de estas criaturas fue inventada para dar explicación a los hechos de sangre y asaltos
-		    acaecidos en los campos y bosques.<br>
-			 <strong id="propiedad"> <br> ATAQUE: 10 <br>
-			DEFENSA : 12  <br>
-			DAÑO: 20  <br>
-			VIDA: 10 </strong>
-			
-			</p></div> 
-		   <div id="barra4" ><img src="../Imagenes/MounstruoOrco.gif" id="mo"></div>
-		   <p> 
-			   <input class="botton_menu01"  name="Guerrero" type="button" value="JUGAR" onClick="javascript:window.open('Pagina2.html')" >
-		   </p>
-		    <p> 
-			   <input class="botton_menu02"  name="Guerrero" type="button" value="ESCOGER OTRO JUGADOR" onClick="javascript:window.open('Index.html')">
-		   </p>
-			 
-		  
-		   
-		</div><!--menu interno-->
-</div>   <!--container  -->
-</body>
-</html>
+#barraB {
+position :relative; 
+float : left;
+left:4px; 
+top:90px; 
+width:300px; 
+height:290px;
+background-color:#000;
+
+}
+
+ p{
+ font-size:15px;
+ } 
+#barra1 {
+position :relative; 
+float:right;
+right:22px;
+top:30px; 
+width:340px;
+font-family:"Times New Roman", Times, serif;
+text-align:justify;
+height:250px; 
+
+
+background-color:#000;
+color:#FFF;
+} 
+ 
+#barra2 {
+position :relative; 
+float : left;
+left:60px; 
+top:50px; 
+width:250px; 
+height:220px;
+background-color:white;
+}
+#barra3 {
+position :relative; 
+float:right;
+text-align:justify;
+left:320px;
+top:100px; 
+width:340px; 
+height:220px; 
+background-color:#000;
+color:#FFF;
+}
+ 
+#barra4 {
+position :relative; 
+float : left;
+left:65px; 
+top:-110px; 
+width:200px; 
+height:150px;
+background-color:white;
+}
+.boton{
+	list-style:none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	text-transform: uppercase;
+	color: #E2E2E2;
+	background-color: #000000;
+	border: none;
+	display:block;
+  	padding:3px 15px;
+	 filter:alpha(opacity=80);
+	font-weight:bold;
+	text-decoration:none;
+	
+}
+
+.botton_menu5 {
+ position:relative;
+ float:left;
+ left:190px;
+ top:180px;
+ font-size: 17px;
+ font-weight:bold;
+ cursor:pointer;
+}
+
+ .botton_menu6 {
+ position:relative;
+ top:110px;
+ float:left;
+ left:300px;
+  font-size: 17px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.botton_menu01 {
+ position:relative;
+ float:left;
+ left:-100px;
+ top:140px;
+ font-size: 17px;
+ font-weight:bold;
+ cursor:pointer;
+}
+
+ .botton_menu02 {
+ position:relative;
+ top:140px;
+ float:left;
+ left:-20px;
+  font-size: 17px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+
+#propiedad{
+	color:#F00;
+	text-align:center;
+	position:relative;
+	left:150px;
+	top:5px;		
+}
+
+#propiedad01{
+	color:yellow;
+	text-align:center;
+	position:relative;
+	font-size:20px;
+	left:5px;
+	top:5px;		
+}
+
+#propiedad01 a:hover{
+	background-color:#000;
+	color:#FF0;
+}
+
+img
+{
+	width:260;
+	height:220;
+}
+#menu-interno01{
+left:120px;
+/*border: 1px solid yellow;*/
+position :relative;
+width:754px;
+height:100px;
+font-size:90%;
+background-image:url(../Imagenes/fondo.jpg);
+float:left;
+margin:1px;
+top:10px;
+}
+
