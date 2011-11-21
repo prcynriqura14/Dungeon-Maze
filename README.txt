@@ -1,238 +1,182 @@
-
-*{	
-}
-
-body{
- background-image:url(../Imagenes/fondo.jpg);	
-	text-align:center;	
-}
-
-#container{
-	border: 4px solid white;
-	background-color:black;	
-	width:1024px;
-	height:656px;
-	top: 100px;
-	right: 170px;	
-}
-
-
-
-#container01{
-/*	border: 4px solid red;*/
-	background-color:black;	
-	width:1024px;
-	height:810px;
-	top: 100px;
-	right: 170px;	
-}
-
-#menu-externo{
-	border: 2px solid white;
-	width: 100%;
-	height:50px;
-	float:left;
-	background-color:#009;
-	font-size:10px;	
-}
-
-#menu{
-	position:relative;
-/*	border:1px solid green;*/
-	height:5px;
-	width:650px;
-	float:center;
-	top:40px;
-	padding:10px 10px 10px;
-	top:20%;
-	font-weight:bold;
-	font-family:Helvetica, Geneva, Arial,
-       SunSans-Regular, sans-serif;
-	color:#FFF;
-}
- 
-#menu-interno{
-left:120px;
-border: 1px solid black;
-position :relative;
-width:754px;
-height:420px;
-font-size:90%;
-background-image:url(../Imagenes/fondo.jpg);
-float:left;
-margin:15px;
-top:30px;
-}
-
- #barraA {
-position :relative; 
-float:right;
-right:2px;
-top:50px; 
-width:420px;
-height:350px; 
-background-color:#000;
-color:#FFF;
-text-align:justify;
-margin:5px;
-border:2px solid black;
-
-} 
- 
-#barraB {
-position :relative; 
-float : left;
-left:4px; 
-top:90px; 
-width:300px; 
-height:290px;
-background-color:#000;
-
-}
-
- p{
- font-size:15px;
- } 
-#barra1 {
-position :relative; 
-float:right;
-right:22px;
-top:30px; 
-width:340px;
-font-family:"Times New Roman", Times, serif;
-text-align:justify;
-height:250px; 
-
-
-background-color:#000;
-color:#FFF;
-} 
- 
-#barra2 {
-position :relative; 
-float : left;
-left:60px; 
-top:50px; 
-width:250px; 
-height:220px;
-background-color:white;
-}
-#barra3 {
-position :relative; 
-float:right;
-text-align:justify;
-left:320px;
-top:100px; 
-width:340px; 
-height:220px; 
-background-color:#000;
-color:#FFF;
-}
- 
-#barra4 {
-position :relative; 
-float : left;
-left:65px; 
-top:-110px; 
-width:200px; 
-height:150px;
-background-color:white;
-}
-.boton{
-	list-style:none;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	font-style: normal;
-	text-transform: uppercase;
-	color: #E2E2E2;
-	background-color: #000000;
-	border: none;
-	display:block;
-  	padding:3px 15px;
-	 filter:alpha(opacity=80);
-	font-weight:bold;
-	text-decoration:none;
+<!doctype>
+<html>
+  <head>
+    <title>Video Juego </title>
+    <link href="../Estilos/juego.css" type="text/css" rel="stylesheet" media="screen" />
+    <style>
+    input:valid {background:#FFF;}
+    input:invalid {background:#FFF;}
+    </style>
+    <script type="text/javascript">
+    var boxx = 10;
+    var boxy = 10;
+    var boxwidth = 1000;
+    var boxheight =530;
+    var ballrad = 20;
+    var boxboundx =  boxwidth + boxx - ballrad;
+    var boxboundy = boxheight + boxy - ballrad;
+    var inboxboundx = boxx + ballrad;
+    var inboxboundy = boxy + ballrad;
+    var ballx = 50;/*1*/
+    var bally = 60;
+    var ctx;
+    var ballvx = 9;
+    var ballvy = 8;
+    var img = new Image();
+	img.src= "Valkiria.gif";
+	var grad;
+    var color;
+    var hue = [/*variación de Colores*/
+      [10, 0, 0],
+      [0, 0, 0],
+      [0, 2, 0],
+      [1, 0, 0],
+      [0, 0, 0],
+      [0, 0, 9]
+    ];    
 	
-}
-
-.botton_menu5 {
- position:relative;
- float:left;
- left:190px;
- top:180px;
- font-size: 17px;
- font-weight:bold;
- cursor:pointer;
-}
-
- .botton_menu6 {
- position:relative;
- top:110px;
- float:left;
- left:300px;
-  font-size: 17px;
-  font-weight:bold;
-  cursor:pointer;
-}
-
-.botton_menu01 {
- position:relative;
- float:left;
- left:-100px;
- top:140px;
- font-size: 17px;
- font-weight:bold;
- cursor:pointer;
-}
-
- .botton_menu02 {
- position:relative;
- top:140px;
- float:left;
- left:-20px;
-  font-size: 17px;
-  font-weight:bold;
-  cursor:pointer;
-}
-
-
-#propiedad{
-	color:#F00;
-	text-align:center;
-	position:relative;
-	left:150px;
-	top:5px;		
-}
-
-#propiedad01{
-	color:yellow;
-	text-align:center;
-	position:relative;
-	font-size:20px;
-	left:5px;
-	top:5px;		
-}
-
-#propiedad01 a:hover{
-	background-color:#000;
-	color:#FF0;
-}
-
-img
-{
-	width:260;
-	height:220;
-}
-#menu-interno01{
-left:120px;
-/*border: 1px solid yellow;*/
-position :relative;
-width:754px;
-height:100px;
-font-size:90%;
-background-image:url(../Imagenes/fondo.jpg);
-float:left;
-margin:1px;
-top:10px;
-}
-
+    function init(){
+      var h;
+      ctx = document.getElementById('canvas').getContext('2d');
+      grad = ctx.createLinearGradient(boxx,boxy,boxx+boxwidth, boxy+boxheight);
+      for (h=0; h < hue.length ;h++){
+        color = 'rgb('+hue[h][0]+','+hue[h][1]+','+hue[h][2]+')';
+        grad.addColorStop(h*1/6,color);      
+      }
+      ctx.fillStyle = grad;
+      ctx.lineWidth = ballrad;
+      
+      moveball();
+      setInterval(moveball,100);
+      }
+    
+    function moveball(){
+      ctx.clearRect(boxx,boxy,boxwidth,boxheight);
+      moveandcheck();
+      ctx.drawImage(img,ballx-ballrad,bally-ballrad,2*ballrad,2*ballrad);/**/
+      ctx.fillRect(boxx,boxy,ballrad,boxheight);
+      ctx.fillRect(boxx+boxwidth-ballrad, boxy, ballrad, boxheight);
+      ctx.fillRect(boxx,boxy,boxwidth,ballrad);
+      ctx.fillRect(boxx,boxy+boxheight-ballrad,boxwidth,ballrad);          
+    }
+    
+    function moveandcheck(){
+      
+      var nballx = ballx + ballvx;
+      var nbally = bally + ballvy;
+      
+      if (nballx > boxboundx){
+        nballx = boxboundx;
+        ballvx = -ballvx;
+        
+      }
+      
+      if (nballx < inboxboundx) {
+        nballx = inboxboundx;
+        ballvx = -ballvx;
+      }
+      
+      if (nbally > boxboundy){
+        nbally = boxboundy;
+        ballvy = -ballvy;
+      }
+      if (nbally < inboxboundy){
+        nbally = inboxboundy;
+        ballvy = -ballvy;
+      }
+      ballx = nballx;
+      bally = nbally;
+    }
+    function change() {
+      ballvx = Number(f.hv.value);
+      ballvy = Number(f.vv.value);
+      return false;
+    }
+    </script>
+    
+    <script  type="text/javascript">
+	 var boxx = 10;
+    var boxy = 10;
+    var boxwidth = 1000;
+    var boxheight =530;
+    var ballrad = 20;
+    var boxboundx =  boxwidth + boxx - ballrad;
+    var boxboundy = boxheight + boxy - ballrad;
+    var inboxboundx = boxx + ballrad;
+    var inboxboundy = boxy + ballrad;
+    var ballx = 50;/*1*/
+    var bally = 60;
+    var ctx;
+    var ballvx = 9;
+    var ballvy = 8;
+    var img = new Image();
+	img.src= "Valkiria.gif";
+	function init(){
+      var h;
+      ctx = document.getElementById('canvas').getContext('2d');
+      grad = ctx.createLinearGradient(boxx,boxy,boxx+boxwidth, boxy+boxheight);
+      for (h=0; h < hue.length ;h++){
+        color = 'rgb('+hue[h][0]+','+hue[h][1]+','+hue[h][2]+')';
+        grad.addColorStop(h*1/6,color);      
+      }
+      ctx.fillStyle = grad;
+      ctx.lineWidth = ballrad;
+      
+      moveball();
+      setInterval(moveball,100);
+      }
+    
+    function moveball(){
+      ctx.clearRect(boxx,boxy,boxwidth,boxheight);
+      moveandcheck();
+      ctx.drawImage(img,ballx-ballrad,bally-ballrad,2*ballrad,2*ballrad);/**/
+      ctx.fillRect(boxx,boxy,ballrad,boxheight);
+      ctx.fillRect(boxx+boxwidth-ballrad, boxy, ballrad, boxheight);
+      ctx.fillRect(boxx,boxy,boxwidth,ballrad);
+      ctx.fillRect(boxx,boxy+boxheight-ballrad,boxwidth,ballrad);          
+    }
+    
+    function moveandcheck(){
+      
+      var nballx = ballx + ballvx;
+      var nbally = bally + ballvy;
+      
+      if (nballx > boxboundx){
+        nballx = boxboundx;
+        ballvx = -ballvx;
+        
+      }
+      
+      if (nballx < inboxboundx) {
+        nballx = inboxboundx;
+        ballvx = -ballvx;
+      }
+      
+      if (nbally > boxboundy){
+        nbally = boxboundy;
+        ballvy = -ballvy;
+      }
+      if (nbally < inboxboundy){
+        nbally = inboxboundy;
+        ballvy = -ballvy;
+      }
+      ballx = nballx;
+      bally = nbally;
+    }
+    function change() {
+      ballvx = Number(f.hv.value);
+      ballvy = Number(f.vv.value);
+      return false;
+    }
+	</script>
+    </head>
+    <body onLoad="init();">
+    <div id="container">
+    <canvas id="canvas" width="1024" height="768">
+      Your browser doesn't support canvas element, so meditate about that
+    </canvas>
+    <br/>
+    </div>
+    </body>
+    </html>
+    
