@@ -1,7 +1,7 @@
 <!doctype>
 <html>
   <head>
-    <title>Video Juego Nivel 02 </title>
+    <title>Video Juego Nivel 03 </title>
     <link href="../Estilos/juego.css" type="text/css" rel="stylesheet" media="screen" />
     <style>
     input:valid {background:#FFF;}
@@ -98,7 +98,7 @@ ctx.drawImage(img4,xllave,yllave,50,50);/**/
       moveball();
 	  
 	  
-	        setInterval(moveball,65);
+	        setInterval(moveball,25);
       }
     
 	
@@ -122,7 +122,7 @@ ctx.drawImage(img4,xllave,yllave,50,50);/**/
 		  document.getElementById("contador").innerHTML = i;
 		  if (m == true){
 			  document.getElementById("winner").style.visibility = "visible";
-		  document.getElementById("winner").innerHTML = "SIGUIENTE NIVEL ";
+		  document.getElementById("winner").innerHTML = " GANASTES... ";
 		  }
 		  
 		  if (img2.style.left == "870px" && i == 0 ){
@@ -132,10 +132,10 @@ ctx.drawImage(img4,xllave,yllave,50,50);/**/
 			  if ( i >= 1 ){  
 			  i++
 			  }			  
-			  if (m == true && i == 10 ){	
+			  if (m == true && i == 35 ){	
 			  	  
 					  
-var pagina=" VideoJuego 1.3.html "
+var pagina=" Index.html "
 location.href=pagina 
 }       
 
@@ -197,7 +197,6 @@ location.href=pagina
         
     </head>
     <body onLoad="init(event);" onkeyup="Mover(event);">
-    <bgsound src="#" loop="-1">
     
     <div id="puntos"></div>
      
