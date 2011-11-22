@@ -1,7 +1,7 @@
 <!doctype>
 <html>
   <head>
-    <title>Video Juego Nivel 01 </title>
+    <title>Video Juego Nivel 02 </title>
     <link href="../Estilos/juego.css" type="text/css" rel="stylesheet" media="screen" />
     <style>
     input:valid {background:#FFF;}
@@ -32,7 +32,7 @@
 	img4.src=  "llave-01.gif";
 	
 	var img2 = new Image();
-	img2.src= "Clerigo.gif";
+	img2.src= "guerrero1.gif";
 	
 	var grad;
     var color;
@@ -98,7 +98,7 @@ ctx.drawImage(img4,xllave,yllave,50,50);/**/
       moveball();
 	  
 	  
-	        setInterval(moveball,98);
+	        setInterval(moveball,65);
       }
     
 	
@@ -135,7 +135,7 @@ ctx.drawImage(img4,xllave,yllave,50,50);/**/
 			  if (m == true && i == 10 ){	
 			  	  
 					  
-var pagina=" VideoJuego 3.2.html "
+var pagina=" VideoJuego 1.3.html "
 location.href=pagina 
 }       
 
@@ -197,6 +197,7 @@ location.href=pagina
         
     </head>
     <body onLoad="init(event);" onkeyup="Mover(event);">
+    <bgsound src="#" loop="-1">
     
     <div id="puntos"></div>
      
